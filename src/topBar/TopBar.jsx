@@ -3,7 +3,9 @@ import './TopBar.css'
 export default function TopBar() {
   return (
     <div className='top'>
-        TopBar
+      <div className="topLeft"></div>
+      <div className="topCenter"></div>
+      <div className="topRight"></div>
     </div>
   )
 }
