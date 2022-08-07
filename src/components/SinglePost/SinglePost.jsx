@@ -11,7 +11,8 @@ export default function SinglePost() {
           className="singlePostImage"
         />
         <hi className="singlePostTitle">
-          Lorem ipsum dolor sit
+          
+          <p>Lorem ipsum dolor sit</p>
           <div className="singlePostEdit">
             <i className="singlePostIcon fa-solid fa-pen-to-square"></i>
             <i className="singlePostIcon fa-solid fa-trash-can"></i>
