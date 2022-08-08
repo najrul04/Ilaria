@@ -22,7 +22,7 @@ export default function TopBar() {
         </ul>
       </div>
       <div className="topRight">
-        <img className='topImage' src="https://scontent.fdac11-2.fna.fbcdn.net/v/t39.30808-6/273842403_10227407100869001_8943212038244427710_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=174925&_nc_eui2=AeFj8ATkBeb4MZfGsg-tF5X8hK73sSP4iiOErvexI_iKI6UoWzhZSOIIcgbUxEh8Fw90MPlSjLAqTD19PptMxCc_&_nc_ohc=s18_-S3JNJEAX_FBhgG&_nc_ht=scontent.fdac11-2.fna&oh=00_AT_VxgR5DEkFuGOlDbvc9i8eSBa8Zc9EP6KllS4lis9OAA&oe=62BDB6E3" alt="" />
+        <img className='topImage' src="https://wallpapercave.com/dwp1x/wp9731329.jpg" alt="" />
 
         <i className="topSearchIcon fa-solid fa-magnifying-glass"></i>
       </div>
