@@ -12,11 +12,19 @@ export default function Settings() {
         <form className="settingsForm">
             <label htmlFor="">Profile Picture</label>
             <div className="settingsPP">
-                <img src="" alt="" />
+                <img src="https://wallpapercave.com/fwp/wp9355849.jpg" alt="" />
                 <label htmlFor="fileInput">
-                    
+                <i className="settingsPPIcon fa-solid fa-circle-user"></i>
                 </label>
+                <input type="file" id="fileInput" style={{display:"none"}}/>
             </div>
+            <label>Username</label>
+            <input type="text" placeholder="Name"/>
+            <label>Email</label>
+            <input type="email" placeholder="name@gmail.com"/>
+            <label>Password</label>
+            <input type="password"/>
+            <button className="settingsSubmit">Update</button>
         </form>
       </div>
       <Sidebar />
