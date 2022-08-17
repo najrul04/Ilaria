@@ -2,7 +2,7 @@
   overflow: hidden;
 }
 
-.login {
+.register {
   height: calc(100vh - 50px);
   display: flex;
   flex-direction: column;
@@ -12,47 +12,47 @@
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url("https://wallpapercave.com/dwp1x/wp6392479.jpg");
+    url("https://wallpapercave.com/dwp1x/wp11130987.jpg");
   /* background-repeat: no-repeat; */
   background-size: cover;
 }
 
-.loginTitle {
+.registerTitle {
   font-size: 50px;
   font-family: "Rubik Distressed", cursive;
 }
 
-.loginForm {
+.registerForm {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
 }
 
-.loginForm > label {
+.registerForm > label {
   margin: 10px 0;
 }
 
-.loginInput {
+.registerInput {
   padding: 10px;
   background-color: #ffffff;
   border: none;
 }
 
-.loginButton {
+.registerButton {
   margin-top: 20px;
   cursor: pointer;
-  background-color: #f08080;
+  background-color: #20b2aa;
   border: none;
   color: #ffffff;
   padding: 10px;
   border-radius: 10px;
 }
 
-.loginRegisterButton {
+.registerLoginButton {
   position: absolute;
   top: 60px;
   right: 20px;
-  background-color: #20b2aa;
+  background-color: #f08080;
   cursor: pointer;
   border: none;
   color: #ffffff;
