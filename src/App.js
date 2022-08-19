@@ -2,11 +2,9 @@ import { Route, Routes } from "react-router-dom";
 import TopBar from "./components/topBar/TopBar";
 // import Single from "./pages/single/Single";
 // import "./App.css";
+import NotFound from "./components/notFound/NotFound";
 import Login from "./pages/login/Login";
 import Settings from "./pages/settings/Settings";
-// import AddProduct from "./components/products/AddProduct";
-// import ListProducts from "./components/products/ListProducts";
-// import ProductDisplay from "./components/products/ProductDisplay";
 // import Products from "./components/products/Products";
 // import Search from "./components/products/Search";
 import Home from "./pages/home/Home";
@@ -28,6 +26,7 @@ function App() {
       <Route path="/write" element={user ? <Write/> : <Register />} />
       <Route path="/settings" element={user ? <Settings/> : <Register />} />
       <Route path="/post/:postId" element={<Single/>}/>
+      <Route path="*" element={<NotFound to="/notFound" />} />
 
 
     </Routes>
