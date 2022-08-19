@@ -1,9 +1,5 @@
-* {
-  overflow: hidden;
-}
-
 .login {
-  height: calc(100vh - 50px);
+  height: calc(100vh - 59px);
   display: flex;
   flex-direction: column;
   align-items: center;
