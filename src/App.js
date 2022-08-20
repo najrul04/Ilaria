@@ -13,7 +13,7 @@ import Register from "./pages/register/Register";
 import Write from "./pages/write/Write";
 
 function App() {
-  const user = false;
+  const user = true;
   return (
     <>
     <TopBar/>
