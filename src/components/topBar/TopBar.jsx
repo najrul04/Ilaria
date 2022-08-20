@@ -1,54 +1,58 @@
-import { Link } from 'react-router-dom';
-import './TopBar.css';
+import { Link } from "react-router-dom";
+import "./TopBar.css";
 
-export default function TopBar() {
-  const user = false;
+export default function Topbar() {
+  const user = true;
   return (
-    <div className='top'>
+    <div className="top">
       <div className="topLeft">
-        <i className="topIcon fa-brands fa-facebook-square"></i>
-
-        <i className="topIcon fa-brands fa-twitter-square"></i>
-
-        <i className="topIcon fa-brands fa-pinterest-square"></i>
-
-        <i className="topIcon fa-brands fa-instagram-square"></i>
+        <i className="topIcon fab fa-facebook-square"></i>
+        <i className="topIcon fab fa-instagram-square"></i>
+        <i className="topIcon fab fa-pinterest-square"></i>
+        <i className="topIcon fab fa-twitter-square"></i>
       </div>
       <div className="topCenter">
         <ul className="topList">
-          <li className='topListItem'><Link className='link' to="/">Home</Link></li>
-          <li className='topListItem'><Link className='link' to="/">About</Link></li>
-          <li className='topListItem'><Link className='link' to="/">Contact</Link></li>
-          <li className='topListItem'><Link className='link' to="/write">Write</Link></li>
-
-          <li className='topListItem'>
-            {user && "LogOut"}
-            </li>
+          <li className="topListItem">
+            <Link className="link" to="/">
+              HOME
+            </Link>
+          </li>
+          <li className="topListItem">ABOUT</li>
+          <li className="topListItem">CONTACT</li>
+          <li className="topListItem">
+            <Link className="link" to="/write">
+              WRITE
+            </Link>
+          </li>
+          {user && <li className="topListItem">LOGOUT</li>}
         </ul>
       </div>
       <div className="topRight">
-        {
-          user ? (
-            
-            <img className='topImage' src="https://wallpapercave.com/dwp1x/wp9731329.jpg" alt="" />
-
-          ) : (
-
-              <ul className='topList'>
-                <li className='topListItem'>
-            <Link className='link' to="/login">Login</Link>
+        {user ? (
+          <Link className="link" to="/settings">
+            <img
+              className="topImg"
+              src="https://wallpapercave.com/dwp1x/wp9731329.jpg"
+              alt=""
+            />
+          </Link>
+        ) : (
+          <ul className="topList">
+            <li className="topListItem">
+              <Link className="link" to="/login">
+                LOGIN
+              </Link>
             </li>
-            
-            <li>
-            <Link className='link' to="/register">Register</Link>
+            <li className="topListItem">
+              <Link className="link" to="/register">
+                REGISTER
+              </Link>
             </li>
-              </ul>
-          )
-              
-        }
-
-        <i className="topSearchIcon fa-solid fa-magnifying-glass"></i>
+          </ul>
+        )}
+        <i className="topSearchIcon fas fa-search"></i>
       </div>
     </div>
-  )
+  );
 }
